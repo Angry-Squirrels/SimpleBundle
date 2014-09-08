@@ -1,0 +1,15 @@
+{
+	"name" : "SimpleBundle",
+	"url" : "https://github.com/Rad-Star/RadEngine",
+	"license" : "MIT",
+    "description" : "SimpleBundle bundle Form radengine",
+    "version" : "0.0.1",
+	"releasenote" : "",
+	"contributors" : ["TBaudon"],
+    "dependencies" : { 
+		"radengine" : "",
+		"openfl":"",
+		"ash":"",
+		"hscript":""
+	}
+}
