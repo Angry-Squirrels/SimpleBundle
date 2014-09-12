@@ -36,12 +36,12 @@ implements RadComp
 		mGizmo.x = x;
 		mGizmo.y = y;
 		
-		Lib.current.stage.addChild(mGizmo);
+		RadGame.getView().addChild(mGizmo);
 	}
 	
 	public function unEdit():Void 
 	{
-		Lib.current.stage.removeChild(mGizmo);
+		RadGame.getView().removeChild(mGizmo);
 	}
 	
 	function initEdit() {
