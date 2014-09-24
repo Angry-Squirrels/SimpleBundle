@@ -31,7 +31,7 @@ implements RadSystem
 	{
 		super(RenderNode, onNodeUpdate, onNodeAdded, onNodeRemoved);
 		
-		mCanvas = RadGame.instance.getRenderZone();
+		mCanvas = RadGame.instance;
 		
 		mNodeMap = new Map<RenderNode, Sprite>();
 		mViewMap = new Map<Sprite, RenderNode>();
