@@ -69,8 +69,8 @@ implements RadComp
 	function onMMove(e:MouseEvent):Void 
 	{
 		if (mDown) {
-			x = e.stageX;
-			y = e.stageY;
+			x = RadGame.instance.mouseX;
+			y = RadGame.instance.mouseY;
 			
 			mGizmo.x = x;
 			mGizmo.y = y;
