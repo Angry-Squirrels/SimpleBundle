@@ -7,10 +7,7 @@ import openfl.Lib;
  * ...
  * @author Thomas B
  */
-class PhysicSys extends ListIteratingSystem<PhysicNode>
-#if debug
-implements RadSystem
-#end
+class PhysicSys extends ListIteratingSystem<PhysicNode> implements RadSystem
 {
 	
 	var mPause : Bool;
@@ -20,20 +17,6 @@ implements RadSystem
 		super(PhysicNode, onNodeUpdate, onNodeAdded, onNodeRemoved);
 		mPause = false;
 	}
-	
-	#if debug
-	/* INTERFACE fr.radstar.radengine.systems.RadSystem */
-	
-	public function enterEditMode():Void 
-	{
-		
-	}
-	
-	public function leaveEditMode():Void 
-	{
-		
-	}
-	#end
 	
 	public function shouldStop() : Bool {
 		return true;
