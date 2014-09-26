@@ -28,7 +28,7 @@ class Render extends ListIteratingSystem<RenderNode> implements RadSystem
 	{
 		super(RenderNode, onNodeUpdate, onNodeAdded, onNodeRemoved);
 		
-		mCanvas = RadGame.instance;
+		mCanvas = RadGame.instance.getRenderArea();
 		
 		mNodeMap = new Map<RenderNode, Sprite>();
 		mViewMap = new Map<Sprite, RenderNode>();
