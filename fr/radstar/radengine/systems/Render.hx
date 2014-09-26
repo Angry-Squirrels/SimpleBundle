@@ -36,7 +36,7 @@ class Render extends ListIteratingSystem<RenderNode> implements RadSystem
 		mPause = false;
 	}
 	
-	public function shouldStop() : Bool {
+	public function shouldPause() : Bool {
 		return false;
 	}
 	
